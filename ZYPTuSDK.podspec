@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source              = { :git => 'https://github.com/zypsusu/tusdkImage.git', :tag => '1.0.5' }
   s.requires_arc        = true
   # s.resources           = 'Localization/*.lproj'
+  s.libraries           = 'c++.1'
 
   s.subspec 'ImageGeeV1' do |i|
     i.vendored_frameworks = 'TuSDKGeeV1.framework'
