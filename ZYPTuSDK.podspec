@@ -8,21 +8,21 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '6.0'
   s.source              = { :git => 'git@github.com:zypsusu/tusdkImage.git', :tag => '1.0.1' }
   s.requires_arc        = true
+  s.resources           = 'Localization/*.lproj'
 
+  # s.subspec 'ImageGeeV1' do |i|
+  #   i.vendored_frameworks = 'TuSDKGeeV1.framework'
+  #   i.resources           = 'Localization/*.lproj'
+  # end
 
-  s.subspec 'ImageGeeV1' do |i|
-    i.vendored_frameworks = 'TuSDKGeeV1.framework'
-    i.resources           = 'Localization/*.lproj'
-  end
+  # s.subspec 'ImageGeeV2' do |i|
+  #   i.vendored_frameworks = 'TuSDKGeeV2.framework'
+  #   i.resources           = 'Localization/*.lproj'
+  # end
 
-  s.subspec 'ImageGeeV2' do |i|
-    i.vendored_frameworks = 'TuSDKGeeV2.framework'
-    i.resources           = 'Localization/*.lproj'
-  end
-
-  s.subspec 'Core' do |c|
-    c.vendored_frameworks = 'TuSDK.framework'
-  end
+  # s.subspec 'Core' do |c|
+  #   c.vendored_frameworks = 'TuSDK.framework'
+  # end
 
   
 
